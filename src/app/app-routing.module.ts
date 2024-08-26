@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'oneponent',
+    loadChildren: () => import('./oneponent/oneponent.module').then( m => m.OneponentPageModule)
+  },
 ];
 
 @NgModule({
